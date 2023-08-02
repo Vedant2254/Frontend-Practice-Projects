@@ -1,0 +1,99 @@
+/* 
+## Colors
+
+### Primary
+
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
+ */
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: hsl(234, 29%, 20%);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 1.5em;
+  margin-top: 1.7em;
+  /* border: 1px solid black; */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1.3rem;
+}
+
+.list-container {
+  line-height: 1.5;
+}
+
+.list-heading {
+  margin-bottom: 1.36rem;
+}
+
+.list {
+  list-style-image: url("./assets/images/icon-list.svg");
+  padding-left: 1.8em;
+}
+
+.list li p {
+  margin-left: 0.4em;
+  margin-top: 0;
+  margin-bottom: 0.33em;
+  transform: translateY(-5px);
+}
+
+.form-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.email-input-label {
+  font-size: small;
+  font-weight: bold;
+}
+
+.email-input {
+  width: calc(100% - (1.3em * 2));
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1.1em;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 8px;
+  outline: none;
+  font-size: medium;
+}
+
+.email-input:focus {
+  border: 1px solid hsl(235, 18%, 26%);
+}
+
+.email-submit-btn {
+  width: 100%;
+  border: none;
+  margin-top: 1em;
+  padding: 1.2em;
+  border-radius: 8px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: background-color 0.5s; */
+}
+
+.email-submit-btn:active {
+  -webkit-tap-highlight-color: transparent;
+  background-color: none;
+  background: linear-gradient(to right, hsl(4, 100%, 67%) 0%, hsl(12, 100%, 63%));
+}

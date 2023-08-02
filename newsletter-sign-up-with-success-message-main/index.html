@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <div>
+      <picture>
+        <source
+          srcset="./assets/images/illustration-sign-up-mobile.svg"
+          media="(max-width:375px)"
+        />
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration`" />
+      </picture>
+    </div>
+
+    <main>
+      <div>
+        <div>
+          <h1 class="heading">Stay updated!</h1>
+        </div>
+
+        <div class="list-container">
+          <div class="list-heading">
+            Join 60,000+ product managers receiving monthly updates on:
+          </div>
+          <div>
+            <ul class="list">
+              <li><p>Product discovery and building what matters</p></li>
+              <li><p>Measuring to ensure updates are a success</p></li>
+              <li><p>And much more</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <div>
+            <div class="email-input-label">Email address</div>
+            <input
+              type="email"
+              name="userEmail"
+              placeholder="email@company.com"
+              class="email-input"
+            />
+          </div>
+          <div>
+            <button class="email-submit-btn">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
