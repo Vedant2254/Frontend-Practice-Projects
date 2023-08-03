@@ -110,12 +110,15 @@ body {
   font-size: medium;
   font-weight: bold;
   cursor: pointer;
+  transition: box-shadow 0.1s;
 }
 
+.btn:hover,
 .btn:active {
   -webkit-tap-highlight-color: transparent;
-  background-color: none;
-  background: linear-gradient(to right, hsl(323, 100%, 62%) 0%, hsl(12, 100%, 63%));
+  background: linear-gradient(to right, hsl(347, 100%, 66%), hsl(12, 100%, 63%));
+  box-shadow: 0 1px 1px hsl(4, 100%, 94%), 0 2px 2px hsl(4, 100%, 94%), 0 4px 4px hsl(4, 100%, 94%),
+    0 8px 8px hsl(4, 100%, 94%), 0 16px 16px hsl(4, 100%, 94%), 0 32px 32px hsl(4, 100%, 94%);
 }
 
 .page2 {
@@ -169,12 +172,6 @@ body {
     padding-right: 2.5em;
     padding-left: 0.6em;
     max-width: 25em;
-  }
-
-  .btn:hover {
-    -webkit-tap-highlight-color: transparent;
-    background-color: none;
-    background: linear-gradient(to right, hsl(4, 100%, 67%) 0%, hsl(12, 100%, 63%));
   }
 
   .heading {
