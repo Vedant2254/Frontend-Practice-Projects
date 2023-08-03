@@ -22,14 +22,26 @@ body {
   margin: 0;
 }
 
-main {
-  margin: 1.5em;
+.hidden {
+  display: none !important;
+}
+
+.input-error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid red !important;
+}
+
+.page1-text-content {
+  margin: 1.6em;
   margin-top: 1.7em;
   /* border: 1px solid black; */
 }
 
-h1 {
+.heading {
   font-size: 2.5em;
+}
+
+.page1-heading {
   margin-bottom: 1.3rem;
 }
 
@@ -58,17 +70,26 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.email-input-label-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .email-input-label {
   font-size: small;
   font-weight: bold;
 }
 
+.email-input-error {
+  color: red;
+}
+
 .email-input {
-  width: calc(100% - (1.3em * 2));
+  width: calc(100% - (1.2em * 2));
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding: 1.1em;
-  border: 1px solid hsl(231, 7%, 60%);
+  border: 1px solid hsl(0, 0%, 80%);
   border-radius: 8px;
   outline: none;
   font-size: medium;
@@ -78,22 +99,98 @@ h1 {
   border: 1px solid hsl(235, 18%, 26%);
 }
 
-.email-submit-btn {
+.btn {
   width: 100%;
   border: none;
-  margin-top: 1em;
-  padding: 1.2em;
+  margin-top: 1rem;
+  padding: 1.2rem;
   border-radius: 8px;
   background-color: hsl(234, 29%, 20%);
   color: white;
   font-size: medium;
   font-weight: bold;
   cursor: pointer;
-  /* transition: background-color 0.5s; */
 }
 
-.email-submit-btn:active {
+.btn:active {
   -webkit-tap-highlight-color: transparent;
   background-color: none;
-  background: linear-gradient(to right, hsl(4, 100%, 67%) 0%, hsl(12, 100%, 63%));
+  background: linear-gradient(to right, hsl(323, 100%, 62%) 0%, hsl(12, 100%, 63%));
+}
+
+.page2 {
+  margin: 1.6em;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page2-heading {
+  margin-top: 2.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.page2-message {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-email {
+  font-weight: bold;
+}
+
+.dismiss-btn-container {
+  padding-bottom: 2em;
+}
+
+@media screen and (min-width: 376px) {
+  main {
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page1 {
+    background-color: white;
+    padding: 1.6em;
+    border-radius: 1.6em;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .page1-text-content {
+    padding-right: 2.5em;
+    padding-left: 0.6em;
+    max-width: 25em;
+  }
+
+  .btn:hover {
+    -webkit-tap-highlight-color: transparent;
+    background-color: none;
+    background: linear-gradient(to right, hsl(4, 100%, 67%) 0%, hsl(12, 100%, 63%));
+  }
+
+  .heading {
+    font-size: 3.5em;
+  }
+
+  .page2 {
+    background-color: white;
+    height: fit-content;
+    max-width: 22em;
+    padding: 3.5em;
+    border-radius: 2.7em;
+  }
+
+  .dismiss-btn-container {
+    padding: 0;
+    padding-top: 1.4em;
+  }
 }
