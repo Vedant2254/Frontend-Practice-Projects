@@ -70,5 +70,5 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## Author
 
 - Website - [Vedant](https://github.com/Vedant2254)
-- Frontend Mentor - [@eXeKutor](https://www.frontendmentor.io/profile/eXeKutor)
+- Frontend Mentor - [@Vedant2254](https://www.frontendmentor.io/profile/Vedant2254)
 - Instagram - [@\_v.e.d.a.n.t.2254\_](https://www.instagram.com/_v.e.d.a.n.t.2254_)
