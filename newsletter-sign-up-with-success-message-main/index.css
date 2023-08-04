@@ -151,6 +151,18 @@ body {
   padding-bottom: 2em;
 }
 
+.attribution {
+  font-size: 11px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 376px) {
   main {
     background-color: hsl(235, 18%, 26%);
@@ -162,7 +174,8 @@ body {
 
   .page1 {
     background-color: white;
-    padding: 1.6em;
+    margin: 1rem;
+    padding: 1.6rem;
     border-radius: 1.6em;
     display: flex;
     flex-direction: row-reverse;
@@ -182,6 +195,7 @@ body {
     background-color: white;
     height: fit-content;
     max-width: 22em;
+    margin: 1rem;
     padding: 3.5em;
     border-radius: 2.7em;
   }
@@ -189,5 +203,27 @@ body {
   .dismiss-btn-container {
     padding: 0;
     padding-top: 1.4em;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+
+  .attribution a {
+    color: hsl(12, 100%, 63%);
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 940px) {
+  .page1-image {
+    display: none;
+  }
+
+  .page1-text-content {
+    padding: 0.2rem;
   }
 }
