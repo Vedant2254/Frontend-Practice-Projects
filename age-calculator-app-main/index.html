@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="date-inputs-container">
+        <div class="date-input-container">
+          <div id="day-input-label" class="date-input-label">DAY</div>
+          <input type="number" name="day" id="day-input" class="date-input" placeholder="DD" />
+          <div id="day-input-error-display" class="date-input-error-display"></div>
+        </div>
+        <div class="date-input-container">
+          <div id="month-input-label" class="date-input-label">MONTH</div>
+          <input type="number" name="month" id="month-input" class="date-input" placeholder="MM" />
+          <div id="month-input-error-display" class="date-input-error-display"></div>
+        </div>
+        <div class="date-input-container">
+          <div id="year-input-label" class="date-input-label">YEAR</div>
+          <input type="number" name="year" id="year-input" class="date-input" placeholder="YYYY" />
+          <div id="year-input-error-display" class="date-input-error-display"></div>
+        </div>
+      </div>
+      <div class="mid-div">
+        <div class="divider"></div>
+        <button class="calc-btn">
+          <img src="./assets/images/icon-arrow.svg" alt="calculate-button" class="calc-btn-icon" />
+        </button>
+      </div>
+      <div class="age-container">
+        <div class="age-text"><span id="years-span">- -</span> years</div>
+        <div class="age-text"><span id="months-span">- -</span> months</div>
+        <div class="age-text"><span id="days-span">- -</span> days</div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Vedant Patil</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
