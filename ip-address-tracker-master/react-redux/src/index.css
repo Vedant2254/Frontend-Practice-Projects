@@ -1,0 +1,173 @@
+:root {
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.ip-address-tracker {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.9fr;
+}
+
+.pattern-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ui-container {
+  width: 88%;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.4rem;
+  z-index: 99;
+}
+
+.heading {
+  color: white;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.domain-form {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.domain-input {
+  outline: none;
+  border: none;
+  width: 84%;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.domain-submit-btn {
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 3.65rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+}
+
+.domain-submit-btn:active {
+  background-color: hsl(0, 0%, 29%);
+}
+
+.details-container {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  position: relative;
+}
+
+.details {
+  max-height: 15.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+}
+
+.d-title {
+  color: var(--dark-gray);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.d-content {
+  margin-top: 0.35rem;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: var(--very-dark-gray);
+}
+
+.marker {
+  transform: translateY(-30px);
+}
+
+@media screen and (min-width: 940px) {
+  body {
+    font-size: 27px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .ui-container {
+    top: 3rem;
+    width: 60rem;
+    min-width: 70%;
+    row-gap: 3rem;
+  }
+
+  .domain-form {
+    width: 35rem;
+  }
+
+  .domain-submit-btn:hover {
+    background-color: hsl(0, 0%, 29%);
+  }
+
+  .details {
+    height: fit-content;
+    min-height: 9rem;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 2rem;
+  }
+
+  .detail-container {
+    flex: 1
+  }
+
+  .d-title {
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  .d-content {
+    margin-top: 0.55rem;
+    text-align: start;
+  }
+
+  .separator {
+    height: 6rem;
+    width: 1px;
+    background-color: rgb(197, 197, 197);
+    align-self: center;
+  }
+}
