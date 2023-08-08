@@ -14,7 +14,7 @@ function Map() {
     center: [0, 0],
     zoom: 0,
     width: "100%",
-    height: "100vh",
+    height: "100%",
   });
 
   useEffect(() => {

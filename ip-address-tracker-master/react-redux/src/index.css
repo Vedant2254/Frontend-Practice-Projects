@@ -117,6 +117,19 @@ body {
   transform: translateY(-55px);
 }
 
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 940px) {
   body {
     font-size: 27px;
